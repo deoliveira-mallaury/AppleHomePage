@@ -1,18 +1,229 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang=en>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset=UTF-8>
+    <meta name=viewport content=width=device-width, initial-scale=1.0>
     <link rel=stylesheet href=assets/styles/main.css>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" integrity="sha384-tViUnnbYAV00FLIhhi3v/dWt3Jxw4gZQcNoSCxCIFNJVCx7/D55/wXsrNIRANwdD" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Onest:wght@100..900&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">    
-    <title>Apple</title>
+    <link href="https://fonts.googleapis.com/css2?family=Onest:wght@100..900&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">    <title>Document</title>
 </head>
 <body>
+    <header>
+        <nav class="navbar">
+            <ul id="collapseNavItem">
+                <li id='home'><a href=""><i class="bi bi-apple"></i></a></li>
+                <div class="nav-items">
+                    <li class="navIcon"><a href=""><i class="bi bi-search"></i></a></li>            
+                    <li class="navIcon"><a href=""><i class="bi bi-bag"></i></a></li>
+                    <li class="navIcon"><a href=""><i class="bi bi-list"></i></a></li>
+                </div>
+            </ul>
+            <ul id="navItem">
+                <li><a href="">Store</a></li>
+                <li><a href="">Mac</a></li>
+                <li><a href="">Ipad</a></li>
+                <li><a href="">Iphone</a></li>
+                <li><a href="">Watch</a></li>
+                <li><a href="">Vision</a></li>
+                <li><a href="">AirPods</a></li>
+                <li><a href="">TV & Maison</a></li>
+                <li><a href="">Divertissement</a></li>
+                <li><a href="">Accessoires</a></li>
+                <li><a href="">Assistance</a></li>
+            </ul>
+        </nav>
+    </header>
+<main class="homepage">
+    <div class="newProducts">
 
-        <!-- scripts -->
-        <script src=./assets/js/main.js></script>
+        <section class="finance">
+            <p>Échelonnez votre achat sur plusieurs mois sans intérêt, et échangez votre ancien modèle pour réduire vos mensualité<a href="" id="financialCondition">*</a> <a href="" id="buyLink">Acheter ></a> </p>
+        </section>
+        <section class="presMacbook">
+            <h2>MacBook Air </h2>
+            
+            <p>Finition bleu ciel.<br/>
+           Performances de haut vol avec la M4.</p>
+            <button id="moreInfoBtn">
+                En savoir plus 
+            </button>
+            <button id="buyBtn">Acheter</button>
+            <figure>
+                <figcaption id="titleMacBookAir">Conçu Pour Apple intelligence.</figcaption>
+            </figure>
+
+            <p class="dispo">Apple intelligence disponible en France début avril</p>
+        </section>
+        <section class="presIpadAir">
+            <h2>iPad <img class="iPadAirLogo" src="./assets/images/logo_ipad_air.png" alt=""/></h2>
+            <p>Maintenant boosté par la puce M3.</p>
+            <button id="moreInfoBtn">
+                En savoir plus 
+            </button>
+            <button id="buyBtn">Acheter</button>
+            <figure>
+                <figcaption>Conçu Pour Apple intelligence.</figcaption>
+            </figure>
+            <p class="dispo">Apple intelligence disponible en France début avril</p>
+        </section>
+        <section class="presMacstudio">
+            <h2>Mac Studio</h2>
+            <p>M4 Max et M3 Ultra. 
+            <br>Choisissez votre superpouvoir.</p>
+            <button id="moreInfoBtn">
+                En savoir plus 
+            </button>
+            <button id="buyBtn">Acheter</button>
+            <figure>
+                <img src="./assets/images/macStudio.png" alt="">
+                <figcaption>Conçu Pour Apple intelligence.</figcaption>
+            </figure>
+            <p class="dispo">Apple intelligence disponible en France début avril</p>
+        </section>
+    </div>
+<div class="promoProducts">
+
+    <section class="presIPad">
+        <h2>iPad</h2>
+        <p>Maintenant avec la vitesse de la puce A16 et un stockage de base doublé.</p>
+        <button id="moreInfoBtn">
+            En savoir plus 
+        </button>
+        <button id="buyBtn">Acheter</button>
+        <figure>
+            <img src="./assets/images/ipad.png" alt="">
+        </figure>
+    </section>
+    <section class="presIPhone">
+        <h2>iPhone</h2>
+        <p>Dé­couvrez la famille iPhone 16.</p>
+        <button id="moreInfoBtn">
+            En savoir plus 
+        </button>
+        <button id="buyBtn">Acheter</button>
+        <figure>
+            <figcaption>Conçu Pour Apple intelligence.</figcaption>
+            <p class="dispo">Apple intelligence disponible en France début avril</p>
+            <img src="./assets/images/iphone.png" alt="">
+        </figure>
+    </section>
+    <section class="presTradeIn">
+        <h2><i class="bi bi-apple"></i>Trade In</h2>
+        <p>Obtenez un crédit sur votre prochain achat en faisant reprendre un iPhone 12 ou plus récent</p>
+        <button id="estimation">
+            Obtenir une estimation 
+        </button>
+        <figure>
+            <img src="./assets/images/tradein.png" alt="">
+        </figure>
+    </section>
+    <section class="presAppleInt">
+        <h2>Apple intelligence</h2>
+        <p>L’intelligence artificielle, naturel­lement.</p>
+        <p class="dispo">Apple intelligence disponible en France début avril</p>
+        <button id="moreInfoBtn">
+            En savoir plus 
+        </button>
+        <figure>
+            <img src="./assets/images/apleIntelligence.png" alt="">
+        </figure>
+    </section>
+    <section class="presWatch">
+        <h3><i class="bi bi-apple"></i>Apple Watch <br/>Series 10</h3>
+        <p>Encore plus fine. Toujours plus grande.</p>
+        <button id="moreInfoBtn">
+            En savoir plus 
+        </button>
+        <button id="buyBtn">Acheter</button>
+        <figure>
+            <img src="./assets/images/watch.png" alt="">
+        </figure>
+    </section>
+    <section class="presAirPods">
+        <figure>
+            <img src="./assets/images/airpods_pro.jpg" alt="">
+        </figure>
+        <h2>AirPods Pro 2</h2>
+        <p>Maintenant avec un test d’audition validé scientifiquement.</p>
+        <button id="moreInfoBtn">
+            En savoir plus 
+        </button>
+        <button id="buyBtn">Acheter</button>
+    </section>
+</div>
+
+ </main>
+ <footer>
+    <section>
+        <h2>Un crédit vous engage et doit être remboursé. 
+            <br/>
+            Vérifiez vos capacités de remboursement avant de vous engager.
+        </h2>
+        <p> <small>*</small>Les financements sont fournis par BNP Paribas Personal Finance sur l’Apple Store en ligne, dans l’app Apple Store et dans les Apple Store de France. Cetelem est une marque de l’établissement de crédit BNP Paribas Personal Finance, SA au capital de 583 834 454 € ‑ Siège social : 1, boulevard Haussmann 75009 Paris - 542 097 902 RCS Paris. N°ORIAS 07 023 128 (
+            <a href="http://web.archive.org/web/20250317121619/https://www.orias.fr/">www.orias.fr</a>
+            ). N°ORIAS [13003600]. Apple agit en tant qu’intermédiaire de crédit non exclusif. Les offres de financement peuvent être modifiées sans préavis. Soumis à l’examen du dossier, de la situation financière et de l’historique d’emprunt. Cette offre n’est pas disponible pour les achats effectués sur les sites Apple Store Éducation et Entreprises. 
+            <a href="/web/20250317121619/https://www.apple.com/fr/shop/browse/financing">Soumis à conditions</a>
+            . Si votre panier contient également des articles n’étant pas soumis à un financement, vous acceptez que BNP Paribas Personal Finance, dans le cadre d’une « délégation de paiement » conformément aux articles 1336 et suivants du Code civil français, puisse prélever les sommes vous concernant au moyen du mandat de prélèvement que vous avez fourni pour les échéances du crédit.
+        </p>
+        <br/>
+        <p>1. Apple Intelligence est disponible en version bêta sur tous les modèles d’iPhone 16, sur les iPhone 15 Pro et iPhone 15 Pro Max, sur l’iPad mini (A17 Pro) ainsi que sur les modèles d’iPad et de Mac équipés d’une puce M1 (et modèles ultérieurs), avec la langue de Siri et celle de l’appareil réglées sur l’anglais (Afrique du Sud, Australie, Canada, États-Unis, Irlande, Nouvelle-Zélande et Royaume-Uni), dans le cadre d’une mise à jour logicielle d’iOS 18, d’iPadOS 18 et de macOS Sequoia. Des fonctionnalités supplémentaires et les langues suivantes seront disponibles début avril : allemand, anglais (Inde, Singapour), chinois (simplifié), coréen, espagnol, français, italien, japonais et portugais (Brésil). D’autres langues, dont le vietnamien, seront disponibles dans le courant de l’année. La disponibilité des fonction­nalités peut varier en fonction des régions et des langues.</p>
+        <br/
+        ><p>2. Les valeurs de reprise peuvent varier selon l’état, l’année et la configuration de l’appareil que vous faites reprendre. Pour pouvoir bénéficier d’une remise et en recevoir le montant par virement bancaire, vous devez avoir au moins 18 ans et être titulaire d’un compte bancaire valable en France. Tous les appareils ne donnent pas droit à une remise. La reprise d’ordinateurs de bureau (non portables) n’est actuellement possible qu’en ligne. Vous pouvez obtenir des informations complémentaires sur les appareils éligibles auprès des 
+            <a href="http://web.archive.org/web/20250317121619/https://fr-appletradein.likewize.com/">partenaires de reprise</a>
+            d’Apple. Apple se réserve le droit de refuser tout appareil ou de limiter le nombre d’appareils repris, pour quelque raison que ce soit. La valeur de l’appareil repris vous sera versée après l’achat d’un nouvel appareil Apple et après analyse de votre appareil, qu’Apple se chargera de recycler. Apple vous donnera une estimation de cette valeur de reprise au moment de l’achat de votre nouvel appareil. Cette estimation n’engage aucunement Apple et ne garantit pas le montant de la remise finale. Le montant de la remise finale est déterminé à la seule discrétion d’Apple après analyse de votre appareil repris. Le virement bancaire est effectué sous réserve que l’appareil reçu soit conforme à la description fournie lors de la demande de reprise. Cette offre peut ne pas être disponible dans tous les magasins. Des conditions supplémentaires peuvent s’appliquer dans certains magasins. Vous pouvez obtenir des informations complémentaires auprès des partenaires agréés d’Apple en charge de la reprise et du recyclage des appareils éligibles. Des limites et restrictions peuvent s’appliquer.
+        </p>
+        <br/>
+        <p>3. La fonctionnalité Test d’audition est prise en charge sur les AirPods Pro 2 dotés du dernier programme interne jumelés à un iPhone ou un iPad compatible exécutant iOS 18 ou iPadOS 18 (ou version ultérieure), et est destinée aux personnes âgées d’au moins 18 ans. Les fonctionnalités de Santé auditive sont sujettes à modification. La disponibi­lité des fonction­nalités peut varier en fonction des régions et des langues. 
+            <a href="/web/20250317121619/https://www.apple.com/fr/airpods-pro/feature-availability/" data-analytics-title="view complete list" aria-label="Voir la liste des fonctionnalités de Santé auditive disponibles par région">Voir la liste complète</a>
+            . Si vous constatez une évolution soudaine de votre audition, discutez-en avec votre médecin. Une perte auditive ne peut être diagnostiquée que par des spécialistes de santé.
+        </p>
+        <br/>
+        <p>Un abonnement est requis pour Apple TV+.</p>
+        <br/>
+        <p>Les fonctionnalités sont sujettes à modification. La disponibilité des fonctionnalités, des applications et des services peut varier en fonction des régions et des langues.</p>
+    </section>
+    <nav>
+        <ul>
+            <li><h3>S’informer et acheter</h3></li>
+            <li><h3>Apple Cartes</h3></li>
+            <li><h3>Compte</h3></li>
+            <li><h3>Diverstissement</h3></li>
+            <li><h3>Apple Store</h3></li>
+            <li><h3>Pour les entreprises</h3></li>
+            <li><h3>Pour l'Education</h3></li>
+            <li><h3>Pour la santé</h3></li>
+            <li><h3>Valeurs d'Apple</h3></li>
+            <li><h3>A propos d'Apple</h3></li>
+        </ul>
+    </nav>
+<section>
+    <p>
+        Vous pouvez aussi faire vos achats 
+        <a href="/web/20250317121619/https://www.apple.com/fr/retail/" data-analytics-title="find an apple store">dans un Apple Store</a>
+        ou
+        <a href="http://web.archive.org/web/20250317121619/https://locate.apple.com/fr/fr/" data-analytics-title="other retailers or resellers" data-analytics-exit-link="">chez un revendeur</a>
+        .
+        <span class="nowrap">Ou appeler le <a href="http://web.archive.org/web/20250317121619/tel:0800 046 046">0800 046 046</a>.</span>
+    </p>
+    <p>France</p>
+    <p>Copyright ©
+				
+        2025
+         Apple Inc. Tous droits réservés.
+    </p>
+    <ul>
+        <li>Engagement de confidentialité</li>
+        <li>Utilisation des cookies</li>
+        <li>Conditions d’utilisation</li>
+        <li>Ventes et remboursements</li>
+        <li>Mentions légales</li>
+        <li>Plan du site</li>
+    </ul>
+</section>
+</footer>
+    <!-- scripts -->
+     <script src=./assets/js/main.js></script>
 </body>
 </html>
