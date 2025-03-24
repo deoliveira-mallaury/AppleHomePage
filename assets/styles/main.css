@@ -23,6 +23,7 @@ body {
 .navbar,
 #collapseNavItem 
 {
+    background: var(--section-bg-color);
     margin: 0;
     position: fixed;
     top: 0;
@@ -66,11 +67,14 @@ body {
 
 
 .homepage{
-    margin-top: 4.6vh;
+    margin-top: 4vh;
 }
 h2{
     font-weight: var(--title-fnt-weight);
-    
+}
+h3 {
+    font-weight: var(--title-fnt-weight);
+    font-size: 2em;
 }
 .dispo {
     color: #6e6e73;
@@ -85,7 +89,7 @@ figcaption{
     font-size: var( --sub-txt-size);
 }
 
-section {
+main section {
     /* background-color:var(--section-bg-color); */
     /* height: 50vh; */
     height: 40vh; /* Hauteur totale de la section */
@@ -109,7 +113,9 @@ section {
     background-image: url("../images/macbook_air.jpg"); /* Chemin vers l'image */
     margin: 0; /* Supprime les marges par défaut */
 }
-
+.presIpadAir #buyBtn{
+    background-color: #b5dfef;
+}
 .presIpadAir {
     height: 40%; /*Hauteur totale de la section*/
 
@@ -137,26 +143,67 @@ section {
 }
 
 .presIPad,
-.presIPhone,
-.presTradeIn,
-.presAppleInt,
-.presWatch
-
- {
+.presIPhone{
     background-color: #F5F5F7;
 }
+
+.presTradeIn{
+    background-repeat: no-repeat; /* Évite de répéter l'image */
+    background-size: cover; /* L'image couvre toute la figure sans distorsion */
+    background-position: center; /* Centre l'image */
+    background-image: url("../images/trade_in.jpg"); /* Chemin vers l'image */
+    margin: 0; /* Supprime les marges par défaut */
+}
+.presAppleInt{
+    background-repeat: no-repeat; /* Évite de répéter l'image */
+    background-size: cover; /* L'image couvre toute la figure sans distorsion */
+    background-position: center; /* Centre l'image */
+    background-image: url("../images/Ai.jpg"); /* Chemin vers l'image */
+    margin: .9em 0 ; /* Supprime les marges par défaut */
+}
+.presWatch
+ {
+    margin-top: 2em;
+    padding-bottom: 6em;
+    background-repeat: no-repeat; /* Évite de répéter l'image */
+    background-size: cover; /* L'image couvre toute la figure sans distorsion */
+    background-position: center; /* Centre l'image */
+    background-image: url("../images/watch.jpg"); /* Chemin vers l'image */
+    margin: 0; /* Supprime les marges par défaut */
+}
+.presWatch h3{
+
+    line-height: 12%;
+}
+.presWatch span {
+    font-size: .5em;
+    text-align: center;
+}
 img{
-    width: 40%;
+    width: 25%;
 }
 .presAirPods {
-    background-color:#000;
+    height: 60vh; /* Hauteur totale de la section */
+
     color: white;
+    /* padding-bottom: 6em; */
+    background-repeat: no-repeat; /* Évite de répéter l'image */
+    background-size: cover; /* L'image couvre toute la figure sans distorsion */
+    background-position: center; /* Centre l'image */
+    background-image: url("../images/air_pods.jpg"); /* Chemin vers l'image */
+    margin: 0; /* Supprime les marges par défaut */
+}
+.presAirPods h3 {
+padding-top: 60%;
 }
 .presAirPods #buyBtn {
 background-color: #000;
 }
 button{
-    width: 30%;
+    display: inline-flex;
+    align-items: center;
+    text-align: center;
+    padding: 0.5em 1em;
     height: 2.2em;
     border-radius: 25px;
     margin: auto;
@@ -164,14 +211,23 @@ button{
     margin-bottom:.9em;
 }
 #moreInfoBtn {
-    background-color: #0077ED;
+    background-color: var(--btn-bg-color);
     color: white;
     border: none;
 }
 #buyBtn {
-    background-color: #D4EAF7 ;
+    background-color: var(--section-bg-color);
     color: #0077ED;
     border: #0077ED solid 1px;
+}
+#buyBtn:hover {
+    background-color: var(--btn-bg-color);
+    color: white;
+}
+#estimation{
+    background-color: var(--btn-bg-color);
+    color: white;
+
 }
 p {
     margin: auto;
@@ -181,7 +237,6 @@ p {
 #buyLink{
     color: #0077ED;
 }
-
 
 #financialCondition:hover{
     color: #0077ED;
@@ -193,6 +248,14 @@ footer{
     margin: 0;
     padding: 0;
 }
+footer h2 {
+    text-align: center;
+    font-size: .9em;
+    padding: 4em;
+}
+footer .generalCondition {
+    margin-bottom: 1em;
+}
 footer p{
     font-size: .75em;
     color: rgba(0, 0, 0, 0.56);
@@ -200,6 +263,58 @@ footer p{
     margin: auto;
     padding: 0;
     width: 90vw;
+}
+footer a {
+    color: var(--p-dispo-txt-color);
+    font-weight: 600;
+}
+footer button {
+    width: 100%;
+    margin-right: 0;
+    display: flex;
+    border:none ;
+    border-top: .5px black solid;
+    border-radius: 0;
+    color: var(--p-dispo-txt-color);
+    background-color: #F5F5F7;
+    justify-content:space-between;
+    margin: auto;
+    width: 95%;
+    font-weight: 700;
+}
+footer nav{
+    width: 100%;
+    margin: 0;
+}
+footer nav li{
+    list-style: none;
+  
+}
+footer .linkBuy{
+    
+    font-size: 1em;
+}
+footer .linkBuy a{
+    font-size: 1em;
+    color: var(--btn-bg-color);
+    font-weight: 400;
+}
+.country{
+    margin: 2em auto;
+}
+.legal_notice{
+    list-style: none;
+    font-size: .8em;
+    margin-bottom: 1em;
+    margin-top: 1em;
+
+}
+.legal_notice li {
+    display: inline;
+    width: 100%;
+    padding-left: 1em;
+    padding-right: 1em;
+    border-left: 1px black solid;
 }
 @media (min-width: 768px) { 
     .navbar{
